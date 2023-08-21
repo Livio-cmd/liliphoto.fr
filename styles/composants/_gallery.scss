@@ -1,0 +1,35 @@
+#gallery-page{
+
+    .wrapper {
+        align-items: center;
+    }
+
+    .top {
+        align-items: center;
+        h3 {
+            font-size: 20px;
+        }
+
+        img {
+            width: 120px;
+        }
+    }
+
+    .gallery {
+        width: 100%;
+        margin-top: 108px;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        img {
+            max-height: 400px;
+            max-width: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: calc(33% - 25px);
+
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

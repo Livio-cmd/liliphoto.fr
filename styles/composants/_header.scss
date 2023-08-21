@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+
+    .logo-banner {
+        width: 100%;
+
+        img {
+            width: 20vh;
+            margin: auto;
+        }
+    }
+
+}
+
+nav {
+    z-index: 999;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+
+    .wrapper {
+        padding: 32px;
+        justify-content: center;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.hero-banner {
+    padding: 54px 0;
+    padding-top: 0;
+    width: 100%;
+    padding: 25px;
+
+    img {
+        width: 100%;
+    }
+}

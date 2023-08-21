@@ -1,0 +1,21 @@
+footer {
+    background-color: #d2cb96;
+    width: 100%;
+    color: white;
+
+    * {
+        padding: 0;
+    }
+
+    .wrapper {
+        padding: 25px 0 !important;
+    }
+
+    a {
+        &:hover {
+            letter-spacing: 2px;
+            color: white;
+            transform: scale(1.2);
+        }
+    }
+}

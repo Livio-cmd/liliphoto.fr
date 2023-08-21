@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@300;500&family=Reenie+Beanie&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: white;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+  transition: opacity 100ms ease-out;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1080px;
+  padding: 128px 0;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  gap: 32px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+img {
+  display: block;
+}
+
+a, button {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-size: 14px;
+}
+a:hover, button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a.active {
+  color: #899066;
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.button {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #899066;
+  padding: 7px 15px !important;
+  outline: 1px solid #899066;
+  transition: all 300ms ease;
+  display: block;
+  margin: 25px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.button:hover {
+  outline-color: transparent;
+  color: #899066;
+  letter-spacing: 3px;
+}
+.button:hover::after {
+  opacity: 1;
+}
+.button::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: inherit;
+  opacity: 0;
+}
+
+h1, h2, h3, p {
+  padding: 25px 0;
+  color: #899066;
+}
+
+p {
+  color: inherit;
+}
+
+.two-sided {
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.two-sided .side {
+  width: 50%;
+}
+.two-sided .side img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.signature {
+  font-family: "Reenie Beanie", cursive;
+  color: #899066;
+  font-size: 30px;
+  white-space: nowrap;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+}
+header .logo-banner {
+  width: 100%;
+}
+header .logo-banner img {
+  width: 20vh;
+  margin: auto;
+}
+
+nav {
+  z-index: 999;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav .wrapper {
+  padding: 32px;
+  justify-content: center;
+}
+nav a {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.hero-banner {
+  padding: 54px 0;
+  padding-top: 0;
+  width: 100%;
+  padding: 25px;
+}
+.hero-banner img {
+  width: 100%;
+}
+
+#about .container {
+  align-items: center;
+  max-width: 850px;
+}
+#about .container #illustration {
+  width: 30vw;
+  margin: 54px 0;
+}
+#about .container .two-sided {
+  padding: 54px 0;
+  gap: 54px;
+  flex-wrap: wrap;
+}
+#about .container .two-sided .side {
+  width: 100%;
+  flex: 1 0 calc(50% - 27px);
+}
+#about .container .two-sided p:first-letter {
+  font-size: 60px;
+  color: #899066;
+}
+#about .container .two-sided p {
+  padding: 0;
+  line-height: 1.5;
+}
+
+#galleries {
+  background-color: #f8f8f8;
+}
+#galleries .wrapper {
+  align-items: center;
+  max-width: none;
+  width: 100%;
+}
+#galleries .container {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 54px;
+  padding: 54px 0;
+}
+#galleries .container .card {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#galleries .container .card .content {
+  padding: 10px;
+  padding-bottom: 0;
+  outline: 1px solid #899066;
+}
+#galleries .container .card .content .button {
+  outline: none;
+  margin: 10px;
+}
+#galleries .container .card img {
+  width: 300px;
+  height: 300px;
+  transition: all 400ms ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#galleries .container .card img:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+#contact .wrapper .two-sided {
+  margin: auto;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact .wrapper .two-sided .side {
+  align-items: center;
+  width: 100%;
+  flex: 1 0 50%;
+  margin-bottom: 54px;
+  font-size: 14px !important;
+}
+#contact .wrapper .two-sided .side h3 {
+  font-size: 20px;
+}
+#contact .wrapper .two-sided .left ul {
+  font-weight: bold;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+}
+#contact .wrapper .two-sided .left ul a {
+  font-weight: bold;
+}
+#contact .wrapper .two-sided .right ul {
+  margin: 54px 0;
+}
+#contact .wrapper .two-sided .right a {
+  background-color: #899066;
+  border-radius: 100px;
+  padding: 10px 12px;
+  font-size: 25px;
+  color: white;
+  transition: all 400ms ease;
+  display: block;
+}
+#contact .wrapper .two-sided .right a:hover {
+  transform: scale(1.2);
+  background-color: #745296;
+}
+
+footer {
+  background-color: #d2cb96;
+  width: 100%;
+  color: white;
+}
+footer * {
+  padding: 0;
+}
+footer .wrapper {
+  padding: 25px 0 !important;
+}
+footer a:hover {
+  letter-spacing: 2px;
+  color: white;
+  transform: scale(1.2);
+}
+
+#gallery-page .wrapper {
+  align-items: center;
+}
+#gallery-page .top {
+  align-items: center;
+}
+#gallery-page .top h3 {
+  font-size: 20px;
+}
+#gallery-page .top img {
+  width: 120px;
+}
+#gallery-page .gallery {
+  width: 100%;
+  margin-top: 108px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#gallery-page .gallery img {
+  max-height: 400px;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(33% - 25px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 98;
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  nav {
+    transition: transform 300ms ease-out;
+  }
+  nav .wrapper {
+    padding: 0;
+  }
+  nav ul {
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease-in-out, margin 300ms ease-in-out;
+  }
+  nav input[type=checkbox] {
+    display: none;
+  }
+  nav input[type=checkbox]:checked ~ ul {
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 1000px;
+    margin: 25px 0;
+  }
+  nav label {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 12px;
+    margin: 5px 10px;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    color: #899066;
+  }
+  nav label span {
+    color: #666;
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
+  nav label i {
+    font-size: 24px;
+  }
+  nav .mobile {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  nav .mobile input[type=checkbox] {
+    display: none;
+  }
+  nav .mobile input[type=checkbox]:checked + ul {
+    background-color: orange !important;
+  }
+  .hero-banner {
+    padding: 0;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .hero-banner img {
+    width: 98%;
+    margin: auto;
+  }
+  #contact .left p {
+    width: 100%;
+    max-width: 94%;
+  }
+  #contact .right .row {
+    flex-direction: row;
+  }
+  #about p {
+    width: 100%;
+    max-width: 94%;
+    margin: auto;
+  }
+  #about #illustration {
+    width: 80% !important;
+  }
+  #gallery-page .wrapper {
+    padding: 25px 0;
+  }
+  #gallery-page .gallery {
+    margin-top: 25px;
+  }
+  #gallery-page .gallery img {
+    max-height: none;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1, h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

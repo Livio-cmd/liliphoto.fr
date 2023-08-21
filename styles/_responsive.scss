@@ -1,0 +1,146 @@
+// media queries
+@media screen and (max-width: 600px) {
+
+    .mobile {
+        display: block;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 98;
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    nav {
+        transition: transform 300ms ease-out;
+        .wrapper {
+            padding: 0;
+        }
+        ul {
+            width: 100%;
+            align-items: center;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 300ms ease-in-out, margin 300ms ease-in-out;
+        }
+
+        input[type=checkbox] {
+            display: none;
+        }
+
+        input[type=checkbox]:checked ~ ul{
+            height: fit-content;
+            max-height: 1000px;
+            margin: 25px 0;
+        }
+
+        label {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 12px;
+            margin: 5px 10px;
+            flex-direction: row !important;
+            justify-content: space-between;
+            align-items: center;
+            color: $green;
+
+            span {
+                color: #666;
+                font-family: "Montserrat";
+                font-weight: normal;
+            }
+
+            i {
+                font-size: 24px;
+            }
+        }
+
+        .mobile {
+            height: fit-content;
+
+            input[type=checkbox] {
+                display: none;
+            }
+
+            input[type=checkbox]:checked + ul{
+                background-color: orange !important;
+            }
+        }
+    }
+
+    .hero-banner {
+        padding: 0;
+        width: 100%;
+        margin-top: 25px;
+
+        img {
+            width: 98%;
+            margin: auto;
+        }
+    }
+
+    #contact {
+        .left {
+            p {
+                width: 100%;
+                max-width: 94%;
+            }
+        }
+
+        .right {
+            .row {
+                flex-direction: row;
+            }
+        }
+    }
+
+    #about {
+        p {
+            width: 100%;
+            max-width: 94%;
+            margin: auto;
+        }
+
+        #illustration {
+            width: 80% !important;
+        }
+    }
+
+    #gallery-page{
+        .wrapper {
+            padding: 25px 0;
+        }
+        .gallery {
+            margin-top: 25px;
+            img{
+                max-height: none;
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+// fonts
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}

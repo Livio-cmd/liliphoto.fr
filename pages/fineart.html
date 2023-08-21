@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lili Photo - Photographe Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- top of the page -->
+
+    <header>
+
+        <div class="logo-banner col">
+            <img id="logo" src="../ressources/images/logo.png" alt="Logo du site">
+        </div>
+
+    </header>
+
+    <nav>
+        <div class="wrapper row">
+            <input class="mobile" type="checkbox" name="menu" id="menu">
+            <div class="mobile" class="row">
+                <label class="row" for="menu"><span>Pages</span><i class="ri-menu-line"></i></label>
+            </div>
+            <ul class="row">
+                <li><a onclick="closeMenu()" href="../index.html" class="active">Accueil</a></li>
+                <li><a onclick="closeMenu()" href="../index.html#about">A propos</a></li>
+                <li><a onclick="closeMenu()" href="../index.html#galleries">Galeries</a></li>
+                <li><a onclick="closeMenu()" href="../index.html#contact">Contact</a></li>
+                <li><a onclick="closeMenu()" href="#!">Tarifs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+        nav {
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+
+    <!-- Main content of the page -->
+
+    <main id="gallery-page">
+
+        <div class="wrapper col">
+
+            <div class="top col">
+                <h2>fine art</h2>
+                <img src="../ressources/images/sloth.png" alt="illustration de chat">
+                <h3>Galerie</h3>
+            </div>
+
+            <div class="gallery row">
+                <img src="https://source.unsplash.com/random?portrait" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, fine art" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, nature" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, colorfull" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, dark" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, field" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, body" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, face" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, landscape" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, eye" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, city" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, minimalist" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, jungle" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, white" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, color" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, animal" alt="Image prise par Aurélie Lhuillier">
+                <img src="https://source.unsplash.com/random?portrait, sad" alt="Image prise par Aurélie Lhuillier">
+            </div>
+
+        </div>
+
+        <!-- bottom of the page -->
+
+        <section id="contact">
+            <div class="wrapper">
+                <div class="two-sided">
+
+                    <div class="side left col">
+                        <h3>Contactez moi</h3>
+                        <img onclick="audioPlay()" style="width: 100px;margin: 25px 0;cursor: pointer;" src="../ressources/images/photography.png" alt="Illustration de chat">
+                        <p style="text-align: center;">
+                            Pour me contacter veuillez utiliser les informations ci-dessous:
+                        </p>
+                        <ul class="col">
+                            <li><a href="https://www.google.fr/maps/place/25+Imp.+Georges+Sand,+83390+Cuers/@43.2383498,6.0773081,283m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12c93dfb285952e1:0xd494e09c06f86ac7!8m2!3d43.2383488!4d6.0779518!16s%2Fg%2F11t8cnjdv2!5m1!1e4?entry=ttu" target="_blank">25 Impasse George Sand 83390 Cuers</a></li>
+                            <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=liliphoto18@gmail.com" target="_blank">liliphoto18@gmail.com</a></li>
+                            <li>06 14 75 15 04</li>
+                        </ul>
+                    </div>
+
+                    <div class="side right col">
+                        <h3>suivez moi</h3>
+                        <ul class="row">
+                            <li><a href="#!"><i class="ri-facebook-line"></i></a></li>
+                            <li><a href="#!"><i class="ri-instagram-line"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrapper col">
+
+            <div class="two-sided">
+
+                <div class="left side"><p style="font-family: 'montserrat';">Créé par <b><a target="_blank" style="font-weight: bolder;" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=semeraro.livio@gmail.com">Livio</a></b></p></div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../script.js" defer></script>
+
+</body>
+</html>

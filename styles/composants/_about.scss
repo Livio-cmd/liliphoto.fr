@@ -1,0 +1,33 @@
+#about {
+    .container {
+        align-items: center;
+        max-width: 850px;
+
+        #illustration {
+            width: 30vw;
+            margin: 54px 0;
+        }
+
+        .two-sided {
+            padding: 54px 0;
+            gap: 54px;
+            flex-wrap: wrap;
+
+            .side {
+                width: 100%;
+                flex: 1 0 calc(50% - 54px / 2);
+            }
+
+            p:first-letter {
+                font-size: 60px;
+                color: $green;
+            }
+
+            p {
+                padding: 0;
+                line-height: 1.5;
+            }
+        }
+    }
+
+}

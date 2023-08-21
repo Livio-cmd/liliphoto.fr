@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@300;500&family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@500&family=Montserrat:wght@300;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,7 +74,7 @@ a.active {
 }
 
 h1, h2 {
-  font-family: "Reenie Beanie", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 48px;
   font-weight: 400;
   text-transform: capitalize;
@@ -146,7 +147,7 @@ p {
 }
 
 .signature {
-  font-family: "Reenie Beanie", cursive;
+  font-family: "Dancing Script", cursive;
   color: #899066;
   font-size: 30px;
   white-space: nowrap;
@@ -192,7 +193,7 @@ nav a {
 
 #about .container {
   align-items: center;
-  max-width: 850px;
+  max-width: 90%;
 }
 #about .container #illustration {
   width: 30vw;
@@ -214,6 +215,10 @@ nav a {
 #about .container .two-sided p {
   padding: 0;
   line-height: 1.5;
+}
+#about .container .two-sided .left img {
+  -o-object-position: center;
+     object-position: center;
 }
 
 #galleries {
@@ -318,8 +323,15 @@ footer a:hover {
 #gallery-page .wrapper {
   align-items: center;
 }
+#gallery-page .description {
+  line-height: 1.5;
+  max-width: 75%;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
 #gallery-page .top {
   align-items: center;
+  gap: 54px;
 }
 #gallery-page .top h3 {
   font-size: 20px;
@@ -341,8 +353,8 @@ footer a:hover {
   flex-basis: calc(33% - 25px);
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 
 @media screen and (max-width: 600px) {

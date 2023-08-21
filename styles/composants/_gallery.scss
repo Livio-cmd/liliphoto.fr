@@ -4,8 +4,17 @@
         align-items: center;
     }
 
+    .description {
+        line-height: 1.5;
+        max-width: 75%;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .top {
         align-items: center;
+        gap: 54px;
+
         h3 {
             font-size: 20px;
         }
@@ -29,7 +38,9 @@
             flex-basis: calc(33% - 25px);
 
             object-fit: cover;
-            object-position: center;
+            object-position: top;
         }
     }
+
+
 }

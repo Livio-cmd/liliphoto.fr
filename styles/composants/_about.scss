@@ -1,7 +1,7 @@
 #about {
     .container {
         align-items: center;
-        max-width: 850px;
+        max-width: 90%;
 
         #illustration {
             width: 30vw;
@@ -26,6 +26,10 @@
             p {
                 padding: 0;
                 line-height: 1.5;
+            }
+
+            .left img{
+                object-position: center;
             }
         }
     }

@@ -117,10 +117,16 @@
         }
         .gallery {
             margin-top: 25px;
+            width: 94%;
             img{
                 max-height: none;
                 max-width: 100%;
             }
+        }
+
+        .description {
+            max-width: none;
+            width: 94%;
         }
     }
 

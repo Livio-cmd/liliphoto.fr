@@ -449,10 +449,15 @@ footer a:hover {
   }
   #gallery-page .gallery {
     margin-top: 25px;
+    width: 94%;
   }
   #gallery-page .gallery img {
     max-height: none;
     max-width: 100%;
+  }
+  #gallery-page .description {
+    max-width: none;
+    width: 94%;
   }
 }
 @media screen and (max-width: 600px) {

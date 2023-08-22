@@ -17,7 +17,9 @@ function closeMenu() {
 const images = document.querySelectorAll('img');
 
 images.forEach(img => {
-    img.oncontextmenu = () => {return false}
+    img.oncontextmenu = () => {return false};
+    img.ondragstart = () => {return false};
+    
     if (img.src === 'https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.webp'){
         img.remove();
     }

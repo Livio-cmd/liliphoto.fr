@@ -51,6 +51,9 @@ ul {
 
 img {
   display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 a, button {
@@ -343,6 +346,7 @@ footer a:hover {
   width: 100%;
   margin-top: 108px;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 #gallery-page .gallery img {

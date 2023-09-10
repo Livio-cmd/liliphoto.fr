@@ -25,6 +25,15 @@ body {
     display: none;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d2cb96   ;
+}
+
 .col {
     display: flex;
     flex-direction: column;
